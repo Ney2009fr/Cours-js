@@ -37,7 +37,7 @@ document.write('<h1>Variables  : declaration / affectation </h1>');
 document.write('<h2>Affectation</h2>');
 
 // le signe = : simple signe egal qui permet d'affecter une valeur a une variable
-//const maBoite = 'Bonne Vacance!!!'; // affectation de la valeur numeriaue 10 dans la variable 'maBoite'
+//const maBoite = 'Bonne Vacance!!!'; // affectation de la valeur numerique 10 dans la variable 'maBoite'
 //console.log(maBoite);
 
 //Declaration avec 'let'
@@ -47,16 +47,6 @@ if(condition) {//bloc}
     function true() {//bloc}
         while(condition) {//bloc}
 */
-
-// il est possible de declarer 2 variables du meme nom avec var 
-var test1 = 123;
-var test1 = 356;
-console.log(test1);
-
-// ce n'est pas possible avec let dans le meme bloc
-// Il est plutot a la mode de dire qu'il faut utiliser let plutot que var
-// ce sont deux outils du langage et c'est aux developpeurs de faire les bons choix
-
 
 //DECLARATION avec CONST 
 // Une constante tout comme une variable permet de conserver une valeur sauf aue nous ne pourrons pas modifier la valeur de la constante durant l'execution du code
@@ -70,7 +60,7 @@ document.write(prenom + ' ' + "<strong>" + nom + "</strong>");
 document.write("<br>");
 document.write("<br>");
 document.write("<br>");
-
+// ("<br>") designe un brake 
 
 let rouge = "rouge";
 document.write("<font color = red>" + rouge + "</font>");
@@ -80,4 +70,99 @@ document.write("<font color = yellow>" + jaune + "</font>");
 document.write("<br>");
 let bleu = "bleu";
 document.write("<font color = blue>" + bleu + "</font>");
-document.write("<br>");
+document.write("<br>");// il est possible de declarer 2 variables du meme nom avec var 
+var test1 = 123;
+var test1 = 356;
+console.log(test1);
+
+
+
+
+
+/*
+OPERATEUR DE COMPARAISON
+
+
+*        affectation
+==       comparaison de valeur 
+===      comparaison de la valeur et du type
+<        strictement inferieur a 
+>        strictement superieur a
+<=       inferieur ou egal a 
+>==      superieur ou egal a 
+AND &&   ET
+OR  ||   OU
+!        n'est pas 
+!=       different de 
+
+*/
+//const nike = 'il y a 2 chaussures';
+//const garcon = 'Matteo';
+
+//console.log(nike);
+//document.write(garcon);
+
+document.write("<h2>IF et ELSE</h2>");
+// on declare la condition dans les parenthese du IF
+// si la condition renvoie TRUE, si elle est verifiée, in entre dans les accolades et le code est exécuté
+
+let a = 9
+b = 5,
+c = 2;
+
+if(a>b){
+    document.write("A est superieur à B <br>");
+} else {
+    document.write("Non c'est B qui est superieur à A <br>");
+}
+// le cas ELSE n'est oas indispensable 
+
+
+// If and AND
+// il est possible de deckarer plusieurs conditions dans le IF grace a des operareurs 
+
+// avec AND && il faut que les deux conditions soient verifiées entre les accolades 
+
+if (a > b && b > c ) {
+    document.write('ok pour les conditions');
+}
+
+
+//IF avec <or
+if ( a==9 || b > c ){
+    document.write("ok pour au moins l'une des conditions <br>");
+
+}
+
+// IF / ELSEIF / ELSE
+
+if(a== 8) {
+    document.write ("A est egal a B");
+}else if (a >c){
+    document.write("B est superieur a C <br>");
+} else if (c ==2 ) {
+    document.write("C est egal a 2 <br>");
+}   else {
+    document.write("tout le monde a faux <br>");
+}
+
+
+// ELSE IF permet d'ajouter des cas supplementaire a une condition IF
+// Si un des cas est vérifé,tout les cas suivant ne sont pas évalués
+
+
+let sale = false
+if(sale) {
+    document.write('<h1>Stock de retour</h1>');
+}  else      {
+    document.write('<h1>Rupture de stock victime de son succes </h1>');
+
+}
+
+let huntingLevel = 8 
+
+if(huntingLevel>7){
+    document.write('Nous pouvons manger plus tard')
+}  else {
+document.write('Il est temps de manger');
+}
