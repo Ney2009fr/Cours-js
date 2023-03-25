@@ -166,3 +166,75 @@ if(huntingLevel>7){
 }  else {
 document.write('Il est temps de manger');
 }
+
+document.write("<h4>Condition SWITCH </h4>")
+
+
+
+let personnage = '';
+let bestPersonnage = 'Mario'
+//switch (personnage) {
+    //case "Luigi":
+    
+    //document.write("Vous avez choisi" + personnage + "<br/>")
+    //break;
+    //case "Toad":
+        //document.write("Vous avez choisi " + personnage + "<br/>");
+        //break;
+        //case "Browser":
+        //document.write("Vous avez choisi " + personnage + "<br/>");
+       // break 
+//}     
+
+
+if(personnage === "Luigi"){
+    document.write("Vous avez choisi le personnage : " + personnage + "<br/>")
+    document.write("Vous etes completement fou c'est " + bestPersonnage + " Le meilleur " + "<br/>");
+}  else if (personnage = "Toad"){
+    document.write("Vous avez choisi le personnage : " + personnage + "<br/>")
+    document.write("Vous etes completement fou c'est " + bestPersonnage + " Le meilleur " + "<br/>");
+}    else if (personnage = "Browser"){
+    document.write("Vous avez choisi le personnage : " + personnage + "<br/>" )
+    document.write("Vous etes completement fou c'est " + bestPersonnage + " le meilleur" +"<br/>");
+  }  else if (personnage = "Luigi"){
+    document.write("Vous avez choisi le personnage : " + personnage + "<br/>" )
+    document.write("Vous etes completement fou c'est " + bestPersonnage + " le meilleur" +"<br/>");
+  }
+  else  {
+    document.write("Choisissez un personnage svp!! " )
+  }
+
+
+document.write("<h4>Les boucles</h4>");
+// initialisation / condition / incrementation
+
+for(let i =0; i <= 5; i++) {
+    document.write(i+ "---");   // instruction pour chaque tour de boucle
+     
+
+}
+
+
+// exercice 1 sur les boucles 
+
+let vacationSpots = ['Los-Angeles','Dubai','Miami'];
+document.write("<br/>");
+document.write(vacationSpots[0]);
+document.write("<br/>");
+document.write(vacationSpots[1]);
+document.write("<br/>");
+document.write(vacationSpots[2]);
+document.write("<br/>");
+
+
+
+
+for(let g= 0;  g<vacationSpots.length; g++)  {
+    document.write("J'adorerai Visiter " + vacationSpots[g] + "<br/>")
+}
+
+
+
+
+
+
